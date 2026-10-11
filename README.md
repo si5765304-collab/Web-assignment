@@ -1,12 +1,11 @@
-# Web Notes — CSC336
+# Web Technologies (CSC336) - Assignment 1
 
-Multi-page HTML/CSS site (no JavaScript).
-
-- `index.html` — intro, student details, lecture cards
-- `lectures/` — 8 lecture pages
-- `css/styles.css` — shared dark theme
-
-Open `index.html` in a browser.
-
-Author: Muhammad Shoaib (FA24-BSE-116, Section B)
+Name: Muhammad Shoaib
+Reg. No: FA24-BSE-116 (Section B)
 Submitted to: Yasmeen Jana
+
+- index.html: homepage with lecture table
+- lecture-1.html to lecture-8.html: 8 lecture pages
+- styles.css: all styling
+
+Open index.html in a browser.

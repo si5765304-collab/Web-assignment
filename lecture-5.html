@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecture 5: CSS Selectors</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="card">
+<!-- Header: site title, name and registration number -->
+<header class="top"><h1>Web Technologies</h1><p>Muhammad Shoaib | FA24-BSE-116 | Section B</p></header>
+<div class="body">
+<h2 class="title" style="border:0;color:var(--text)">Lecture 5: CSS Selectors</h2>
+<p class="sub">Choosing which elements to style</p>
+<h2>Summary</h2>
+<p>Selectors tell the browser which elements a rule applies to. We can select by element name, class or id, and combine selectors.</p>
+<h2>Topics Covered</h2>
+<ul><li><strong>Basic Selectors</strong><ul><li>Element</li><li>Class</li><li>ID</li></ul></li><li><strong>Combinators</strong><ul><li>Descendant</li><li>Child</li></ul></li><li><strong>Pseudo-classes</strong><ul><li>:hover</li><li>:first-child</li></ul></li></ul>
+<h2>Example Code</h2>
+<pre><code>&lt;style&gt;
+  .demo-note { color: crimson; font-weight: bold; }
+&lt;/style&gt;
+&lt;p class=&quot;demo-note&quot;&gt;Styled by a class selector.&lt;/p&gt;</code></pre>
+<h2>Output</h2>
+<div class="out">
+<style>
+  .demo-note { color: crimson; font-weight: bold; }
+</style>
+<p class="demo-note">Styled by a class selector.</p>
+</div>
+</div>
+<!-- Navigation links -->
+<nav class="nav"><a href="index.html">Home</a> <span>|</span> <a href="lecture-4.html">Previous Lecture</a> <span>|</span> <a href="lecture-6.html">Next Lecture</a></nav>
+</div>
+</body>
+</html>

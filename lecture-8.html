@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecture 8: Introduction to JavaScript</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="card">
+<!-- Header: site title, name and registration number -->
+<header class="top"><h1>Web Technologies</h1><p>Muhammad Shoaib | FA24-BSE-116 | Section B</p></header>
+<div class="body">
+<h2 class="title" style="border:0;color:var(--text)">Lecture 8: Introduction to JavaScript</h2>
+<p class="sub">Adding behaviour to webpages</p>
+<h2>Summary</h2>
+<p>JavaScript makes pages interactive. This lecture introduces variables, functions and handling user events such as button clicks.</p>
+<h2>Topics Covered</h2>
+<ul><li><strong>Basics</strong><ul><li>Variables</li><li>Data types</li><li>Operators</li></ul></li><li><strong>Interaction</strong><ul><li>Functions</li><li>DOM</li><li>Events</li></ul></li></ul>
+<h2>Example Code</h2>
+<pre><code>&lt;button onclick=&quot;document.getElementById(&#x27;msg&#x27;).textContent=&#x27;Hello from JavaScript!&#x27;&quot;&gt;Click me&lt;/button&gt;
+&lt;p id=&quot;msg&quot;&gt;&lt;/p&gt;</code></pre>
+<h2>Output</h2>
+<div class="out">
+<button onclick="document.getElementById('msg').textContent='Hello from JavaScript!'">Click me</button>
+<p id="msg"></p>
+</div>
+</div>
+<!-- Navigation links -->
+<nav class="nav"><a href="index.html">Home</a> <span>|</span> <a href="lecture-7.html">Previous Lecture</a></nav>
+</div>
+</body>
+</html>
