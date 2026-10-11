@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Why elements take up more space than you set.">
+<title>The CSS Box Model | Web Notes</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!-- Sidebar navigation (links to all lectures) -->
+<aside class="side"><a class="logo" href="../index.html">web<b>.</b>notes</a><small>Menu</small><nav aria-label="Lectures"><a class="" href="../index.html"><i>~</i>Home</a><a class="" href="lecture-01.html"><i>01</i>Introduction to the Web</a><a class="" href="lecture-02.html"><i>02</i>HTML Document Structure</a><a class="" href="lecture-03.html"><i>03</i>Semantic HTML</a><a class="" href="lecture-04.html"><i>04</i>CSS Fundamentals</a><a class="on" href="lecture-05.html"><i>05</i>The CSS Box Model</a><a class="" href="lecture-06.html"><i>06</i>Flexbox Basics</a><a class="" href="lecture-07.html"><i>07</i>Flexbox in Practice</a><a class="" href="lecture-08.html"><i>08</i>Responsive Web Design</a></nav></aside>
+<!-- Main content: changes on every page -->
+<main class="wrap">
+<header>
+<p class="tag">Lecture 05 · CSS</p>
+<h1>The CSS Box Model</h1>
+<p class="lead">Why elements take up more space than you set.</p>
+</header>
+<section class="sec"><h2>Summary</h2><p>Every element is a box made of content, padding, border and margin, from the inside outwards.</p><p>By default width only covers the content, so padding and border make the box bigger. <code>box-sizing: border-box</code> includes them in the width.</p></section>
+<div class="file"><div>box.css</div><pre><code style="background:none;padding:0;color:inherit">* { box-sizing: border-box; }
+.box {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid;
+  margin: 16px;
+}</code></pre></div>
+<section><h2>Key concepts</h2><ul class="chips"><li>Content</li><li>Padding</li><li>Border</li><li>Margin</li></ul></section>
+<div class="tip"><b>Inside out</b>Content, then padding, then border, then margin.</div>
+<nav class="pn" aria-label="Lecture navigation"><a href="lecture-04.html"><small>← Previous</small>CSS Fundamentals</a><a class="r" href="lecture-06.html"><small>Next →</small>Flexbox Basics</a></nav>
+<footer class="foot">CSC336 Web Technologies · Muhammad Shoaib</footer>
+</main>
+</body>
+</html>

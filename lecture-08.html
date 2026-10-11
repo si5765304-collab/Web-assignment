@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="One page that works on every screen size.">
+<title>Responsive Web Design | Web Notes</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!-- Sidebar navigation (links to all lectures) -->
+<aside class="side"><a class="logo" href="../index.html">web<b>.</b>notes</a><small>Menu</small><nav aria-label="Lectures"><a class="" href="../index.html"><i>~</i>Home</a><a class="" href="lecture-01.html"><i>01</i>Introduction to the Web</a><a class="" href="lecture-02.html"><i>02</i>HTML Document Structure</a><a class="" href="lecture-03.html"><i>03</i>Semantic HTML</a><a class="" href="lecture-04.html"><i>04</i>CSS Fundamentals</a><a class="" href="lecture-05.html"><i>05</i>The CSS Box Model</a><a class="" href="lecture-06.html"><i>06</i>Flexbox Basics</a><a class="" href="lecture-07.html"><i>07</i>Flexbox in Practice</a><a class="on" href="lecture-08.html"><i>08</i>Responsive Web Design</a></nav></aside>
+<!-- Main content: changes on every page -->
+<main class="wrap">
+<header>
+<p class="tag">Lecture 08 · Responsive</p>
+<h1>Responsive Web Design</h1>
+<p class="lead">One page that works on every screen size.</p>
+</header>
+<section class="sec"><h2>Summary</h2><p>Responsive design adapts layout to the space available. Start with the mobile layout, then enhance for wider screens.</p><p>The viewport meta tag makes phones use their real width, and media queries apply styles at chosen widths. Add a breakpoint when the content needs one, not for a specific device.</p></section>
+<div class="file"><div>responsive.css</div><pre><code style="background:none;padding:0;color:inherit">img { max-width: 100%; height: auto; }
+
+@media (min-width: 768px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}</code></pre></div>
+<section><h2>Key concepts</h2><ul class="chips"><li>Viewport tag</li><li>Fluid images</li><li>Media queries</li><li>Mobile first</li></ul></section>
+<div class="tip"><b>Test it</b>Drag the browser window narrow and wide and fix whatever breaks.</div>
+<nav class="pn" aria-label="Lecture navigation"><a href="lecture-07.html"><small>← Previous</small>Flexbox in Practice</a></nav>
+<footer class="foot">CSC336 Web Technologies · Muhammad Shoaib</footer>
+</main>
+</body>
+</html>

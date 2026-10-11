@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Choosing tags by meaning, not by looks.">
+<title>Semantic HTML | Web Notes</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!-- Sidebar navigation (links to all lectures) -->
+<aside class="side"><a class="logo" href="../index.html">web<b>.</b>notes</a><small>Menu</small><nav aria-label="Lectures"><a class="" href="../index.html"><i>~</i>Home</a><a class="" href="lecture-01.html"><i>01</i>Introduction to the Web</a><a class="" href="lecture-02.html"><i>02</i>HTML Document Structure</a><a class="on" href="lecture-03.html"><i>03</i>Semantic HTML</a><a class="" href="lecture-04.html"><i>04</i>CSS Fundamentals</a><a class="" href="lecture-05.html"><i>05</i>The CSS Box Model</a><a class="" href="lecture-06.html"><i>06</i>Flexbox Basics</a><a class="" href="lecture-07.html"><i>07</i>Flexbox in Practice</a><a class="" href="lecture-08.html"><i>08</i>Responsive Web Design</a></nav></aside>
+<!-- Main content: changes on every page -->
+<main class="wrap">
+<header>
+<p class="tag">Lecture 03 · HTML</p>
+<h1>Semantic HTML</h1>
+<p class="lead">Choosing tags by meaning, not by looks.</p>
+</header>
+<section class="sec"><h2>Summary</h2><p>Semantic elements such as <code>header</code>, <code>nav</code>, <code>main</code>, <code>article</code> and <code>footer</code> describe what a block is for.</p><p>This helps screen readers and search engines, and makes code easier to read. Pick the tag for its purpose, then style it with CSS.</p></section>
+<div class="file"><div>layout.html</div><pre><code style="background:none;padding:0;color:inherit">&lt;header&gt;
+  &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;article&gt;...&lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code></pre></div>
+<section><h2>Key concepts</h2><ul class="chips"><li>header / nav</li><li>main / article</li><li>section / aside</li><li>Accessibility</li></ul></section>
+<div class="tip"><b>Rule of thumb</b>If a plain div has a clear job, there is probably a better tag for it.</div>
+<nav class="pn" aria-label="Lecture navigation"><a href="lecture-02.html"><small>← Previous</small>HTML Document Structure</a><a class="r" href="lecture-04.html"><small>Next →</small>CSS Fundamentals</a></nav>
+<footer class="foot">CSC336 Web Technologies · Muhammad Shoaib</footer>
+</main>
+</body>
+</html>

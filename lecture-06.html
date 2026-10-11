@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Laying items out in a row or a column.">
+<title>Flexbox Basics | Web Notes</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!-- Sidebar navigation (links to all lectures) -->
+<aside class="side"><a class="logo" href="../index.html">web<b>.</b>notes</a><small>Menu</small><nav aria-label="Lectures"><a class="" href="../index.html"><i>~</i>Home</a><a class="" href="lecture-01.html"><i>01</i>Introduction to the Web</a><a class="" href="lecture-02.html"><i>02</i>HTML Document Structure</a><a class="" href="lecture-03.html"><i>03</i>Semantic HTML</a><a class="" href="lecture-04.html"><i>04</i>CSS Fundamentals</a><a class="" href="lecture-05.html"><i>05</i>The CSS Box Model</a><a class="on" href="lecture-06.html"><i>06</i>Flexbox Basics</a><a class="" href="lecture-07.html"><i>07</i>Flexbox in Practice</a><a class="" href="lecture-08.html"><i>08</i>Responsive Web Design</a></nav></aside>
+<!-- Main content: changes on every page -->
+<main class="wrap">
+<header>
+<p class="tag">Lecture 06 · CSS</p>
+<h1>Flexbox Basics</h1>
+<p class="lead">Laying items out in a row or a column.</p>
+</header>
+<section class="sec"><h2>Summary</h2><p>Setting <code>display: flex</code> turns a container's children into flex items arranged along a main axis, chosen by <code>flex-direction</code>.</p><p><code>justify-content</code> aligns along the main axis and <code>align-items</code> along the cross axis. <code>gap</code> adds space between items.</p></section>
+<div class="file"><div>flex.css</div><pre><code style="background:none;padding:0;color:inherit">.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}</code></pre></div>
+<section><h2>Key concepts</h2><ul class="chips"><li>Main & cross axis</li><li>flex-direction</li><li>justify-content</li><li>align-items</li></ul></section>
+<div class="tip"><b>Pick a direction</b>Row for side by side, column for stacked.</div>
+<nav class="pn" aria-label="Lecture navigation"><a href="lecture-05.html"><small>← Previous</small>The CSS Box Model</a><a class="r" href="lecture-07.html"><small>Next →</small>Flexbox in Practice</a></nav>
+<footer class="foot">CSC336 Web Technologies · Muhammad Shoaib</footer>
+</main>
+</body>
+</html>

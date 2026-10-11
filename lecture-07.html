@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sharing space, wrapping and real components.">
+<title>Flexbox in Practice | Web Notes</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!-- Sidebar navigation (links to all lectures) -->
+<aside class="side"><a class="logo" href="../index.html">web<b>.</b>notes</a><small>Menu</small><nav aria-label="Lectures"><a class="" href="../index.html"><i>~</i>Home</a><a class="" href="lecture-01.html"><i>01</i>Introduction to the Web</a><a class="" href="lecture-02.html"><i>02</i>HTML Document Structure</a><a class="" href="lecture-03.html"><i>03</i>Semantic HTML</a><a class="" href="lecture-04.html"><i>04</i>CSS Fundamentals</a><a class="" href="lecture-05.html"><i>05</i>The CSS Box Model</a><a class="" href="lecture-06.html"><i>06</i>Flexbox Basics</a><a class="on" href="lecture-07.html"><i>07</i>Flexbox in Practice</a><a class="" href="lecture-08.html"><i>08</i>Responsive Web Design</a></nav></aside>
+<!-- Main content: changes on every page -->
+<main class="wrap">
+<header>
+<p class="tag">Lecture 07 · CSS</p>
+<h1>Flexbox in Practice</h1>
+<p class="lead">Sharing space, wrapping and real components.</p>
+</header>
+<section class="sec"><h2>Summary</h2><p>Items can grow, shrink or keep a base size with <code>flex-grow</code>, <code>flex-shrink</code> and <code>flex-basis</code>, usually written as the <code>flex</code> shorthand.</p><p>Add <code>flex-wrap: wrap</code> so items drop to a new line when space runs out. This is great for navbars, toolbars and card rows.</p></section>
+<div class="file"><div>cards.css</div><pre><code style="background:none;padding:0;color:inherit">.cards { display: flex; flex-wrap: wrap; gap: 16px; }
+.card  { flex: 1 1 220px; }</code></pre></div>
+<section><h2>Key concepts</h2><ul class="chips"><li>flex shorthand</li><li>flex-wrap</li><li>Equal-height cards</li><li>Navbars</li></ul></section>
+<div class="tip"><b>Try this</b>Use flex: 1 1 220px on cards for a layout that wraps without media queries.</div>
+<nav class="pn" aria-label="Lecture navigation"><a href="lecture-06.html"><small>← Previous</small>Flexbox Basics</a><a class="r" href="lecture-08.html"><small>Next →</small>Responsive Web Design</a></nav>
+<footer class="foot">CSC336 Web Technologies · Muhammad Shoaib</footer>
+</main>
+</body>
+</html>

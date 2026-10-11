@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Selectors, declarations and the cascade.">
+<title>CSS Fundamentals | Web Notes</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!-- Sidebar navigation (links to all lectures) -->
+<aside class="side"><a class="logo" href="../index.html">web<b>.</b>notes</a><small>Menu</small><nav aria-label="Lectures"><a class="" href="../index.html"><i>~</i>Home</a><a class="" href="lecture-01.html"><i>01</i>Introduction to the Web</a><a class="" href="lecture-02.html"><i>02</i>HTML Document Structure</a><a class="" href="lecture-03.html"><i>03</i>Semantic HTML</a><a class="on" href="lecture-04.html"><i>04</i>CSS Fundamentals</a><a class="" href="lecture-05.html"><i>05</i>The CSS Box Model</a><a class="" href="lecture-06.html"><i>06</i>Flexbox Basics</a><a class="" href="lecture-07.html"><i>07</i>Flexbox in Practice</a><a class="" href="lecture-08.html"><i>08</i>Responsive Web Design</a></nav></aside>
+<!-- Main content: changes on every page -->
+<main class="wrap">
+<header>
+<p class="tag">Lecture 04 · CSS</p>
+<h1>CSS Fundamentals</h1>
+<p class="lead">Selectors, declarations and the cascade.</p>
+</header>
+<section class="sec"><h2>Summary</h2><p>A CSS rule has a selector (who) and declarations (what). Each declaration is a property with a value, such as a colour or font size.</p><p>When rules clash, the cascade decides using importance, specificity and order. Reusable classes keep a stylesheet tidy.</p></section>
+<div class="file"><div>style.css</div><pre><code style="background:none;padding:0;color:inherit">.card {
+  color: #222;
+  padding: 1rem;
+}
+.card h2 { font-size: 1.4rem; }</code></pre></div>
+<section><h2>Key concepts</h2><ul class="chips"><li>Selectors</li><li>Properties & values</li><li>Specificity</li><li>External stylesheets</li></ul></section>
+<div class="tip"><b>Keep it reusable</b>Prefer classes over inline styles so one change updates the whole site.</div>
+<nav class="pn" aria-label="Lecture navigation"><a href="lecture-03.html"><small>← Previous</small>Semantic HTML</a><a class="r" href="lecture-05.html"><small>Next →</small>The CSS Box Model</a></nav>
+<footer class="foot">CSC336 Web Technologies · Muhammad Shoaib</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap");
+/* 1. Variables: colours defined once, used everywhere with var() */
+:root{--bg:#0e1013;--panel:#171a20;--line:#272c36;--text:#ece9e2;--mute:#97a0ad;--accent:#ffb347;--hot:#ff6b6b;--code:#0a0c0f}
+/* 2. Reset and page layout: body is a CSS Grid (sidebar + content) */
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{display:grid;grid-template-columns:270px 1fr;min-height:100vh;background:var(--bg);color:var(--text);font:16px/1.7 "Space Grotesk",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+/* 3. Sidebar navigation (sticky on desktop) */
+.side{position:sticky;top:0;height:100vh;padding:28px 22px;border-right:1px solid var(--line);background:#0b0d10;overflow-y:auto}
+.logo{display:block;font-weight:700;font-size:20px;letter-spacing:-.02em;margin-bottom:28px}
+.logo b{color:var(--accent)}
+.side small{display:block;margin:0 0 8px;color:var(--mute);font:600 11px "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+.side nav a{display:flex;gap:10px;padding:8px 10px;border-radius:8px;color:var(--mute);font-size:14px;line-height:1.35}
+.side nav a i{font:normal 600 12px "JetBrains Mono",monospace;color:var(--accent);padding-top:2px}
+.side nav a:hover,.side nav a.on{background:var(--panel);color:var(--text)}
+/* 4. Main content area and typography */
+.wrap{width:min(920px,100%);padding:56px 48px 40px;margin:auto 0}
+.tag{font:600 12px "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.05;letter-spacing:-.04em;margin:14px 0 18px}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font-size:22px;letter-spacing:-.02em;margin:40px 0 14px}
+.lead{color:var(--mute);font-size:18px;max-width:600px}
+/* 5. Student details box (Grid with 2 columns) */
+.id{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:36px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.id div{padding:16px 20px;background:var(--panel)}
+.id dt{font:600 11px "JetBrains Mono",monospace;color:var(--mute);text-transform:uppercase;letter-spacing:.1em}
+.id dd{margin:2px 0 0;font-weight:500}
+.id .todo{color:var(--hot)}
+/* 6. Lecture cards on home page */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.lc{position:relative;display:block;padding:22px 22px 20px;background:var(--panel);border:1px solid var(--line);border-radius:14px;transition:.2s}
+.lc:hover{border-color:var(--accent);transform:translateY(-3px)}
+.lc .n{position:absolute;top:8px;right:16px;font:700 54px "Space Grotesk";color:transparent;-webkit-text-stroke:1px #3a414e}
+.lc span{font:600 11px "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}
+.lc h3{margin:6px 0 4px;font-size:19px;letter-spacing:-.02em;max-width:75%}
+.lc p{color:var(--mute);font-size:14px}
+/* 7. Lecture page: text, code box, chips, tip, prev/next */
+.sec p{margin-bottom:14px;color:#c9ccd2}
+code{font-family:"JetBrains Mono",monospace;font-size:.88em;color:var(--accent);background:#1c2027;padding:2px 6px;border-radius:5px}
+.file{margin:22px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--code)}
+.file div{padding:8px 16px;border-bottom:1px solid var(--line);font:12px "JetBrains Mono",monospace;color:var(--mute)}
+.file pre{padding:16px;overflow-x:auto;font:13px/1.7 "JetBrains Mono",monospace;color:#ffd9a0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
+.chips li{padding:7px 14px;border:1px solid var(--line);border-radius:99px;background:var(--panel);font-size:14px}
+.tip{margin-top:34px;padding:18px 22px;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;background:var(--panel)}
+.tip b{display:block;color:var(--accent);font-size:13px;font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:40px}
+.pn a{padding:16px 20px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.pn a:hover{border-color:var(--accent)}
+.pn small{display:block;color:var(--mute);font-size:12px}
+.pn .r{text-align:right;grid-column:2}
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--mute);font-size:13px}
+/* 8. Responsive: on screens under 820px the layout becomes single column */
+@media(max-width:820px){
+body{display:block}
+.side{position:static;height:auto;padding:16px;border:0;border-bottom:1px solid var(--line)}
+.logo{margin-bottom:10px}.side small{display:none}
+.side nav{display:flex;gap:6px;overflow-x:auto}.side nav a{white-space:nowrap}
+.wrap{padding:32px 20px}
+.grid,.id,.pn{grid-template-columns:1fr}.pn .r{grid-column:1}
+}

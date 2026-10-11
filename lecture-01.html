@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How a browser turns a typed address into a visible page.">
+<title>Introduction to the Web | Web Notes</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!-- Sidebar navigation (links to all lectures) -->
+<aside class="side"><a class="logo" href="../index.html">web<b>.</b>notes</a><small>Menu</small><nav aria-label="Lectures"><a class="" href="../index.html"><i>~</i>Home</a><a class="on" href="lecture-01.html"><i>01</i>Introduction to the Web</a><a class="" href="lecture-02.html"><i>02</i>HTML Document Structure</a><a class="" href="lecture-03.html"><i>03</i>Semantic HTML</a><a class="" href="lecture-04.html"><i>04</i>CSS Fundamentals</a><a class="" href="lecture-05.html"><i>05</i>The CSS Box Model</a><a class="" href="lecture-06.html"><i>06</i>Flexbox Basics</a><a class="" href="lecture-07.html"><i>07</i>Flexbox in Practice</a><a class="" href="lecture-08.html"><i>08</i>Responsive Web Design</a></nav></aside>
+<!-- Main content: changes on every page -->
+<main class="wrap">
+<header>
+<p class="tag">Lecture 01 · Foundations</p>
+<h1>Introduction to the Web</h1>
+<p class="lead">How a browser turns a typed address into a visible page.</p>
+</header>
+<section class="sec"><h2>Summary</h2><p>The web is a network of linked documents and apps reached through the internet. Every site is a bundle of files: HTML, CSS, images and scripts.</p><p>Typing a URL starts a chain: DNS finds the server, the browser sends an HTTP request, the server answers, and the browser draws the result. HTTPS encrypts that conversation.</p></section>
+<div class="file"><div>request.http</div><pre><code style="background:none;padding:0;color:inherit">GET /index.html HTTP/1.1
+Host: example.com
+
+200 OK
+Content-Type: text/html</code></pre></div>
+<section><h2>Key concepts</h2><ul class="chips"><li>URL & DNS</li><li>HTTP request/response</li><li>Browser vs server</li><li>HTTPS</li></ul></section>
+<div class="tip"><b>Remember the loop</b>Browser asks, server answers, browser renders. Everything else is detail on top of this.</div>
+<nav class="pn" aria-label="Lecture navigation"><span></span><a class="r" href="lecture-02.html"><small>Next →</small>HTML Document Structure</a></nav>
+<footer class="foot">CSC336 Web Technologies · Muhammad Shoaib</footer>
+</main>
+</body>
+</html>

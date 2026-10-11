@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The skeleton every webpage is built on.">
+<title>HTML Document Structure | Web Notes</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!-- Sidebar navigation (links to all lectures) -->
+<aside class="side"><a class="logo" href="../index.html">web<b>.</b>notes</a><small>Menu</small><nav aria-label="Lectures"><a class="" href="../index.html"><i>~</i>Home</a><a class="" href="lecture-01.html"><i>01</i>Introduction to the Web</a><a class="on" href="lecture-02.html"><i>02</i>HTML Document Structure</a><a class="" href="lecture-03.html"><i>03</i>Semantic HTML</a><a class="" href="lecture-04.html"><i>04</i>CSS Fundamentals</a><a class="" href="lecture-05.html"><i>05</i>The CSS Box Model</a><a class="" href="lecture-06.html"><i>06</i>Flexbox Basics</a><a class="" href="lecture-07.html"><i>07</i>Flexbox in Practice</a><a class="" href="lecture-08.html"><i>08</i>Responsive Web Design</a></nav></aside>
+<!-- Main content: changes on every page -->
+<main class="wrap">
+<header>
+<p class="tag">Lecture 02 · HTML</p>
+<h1>HTML Document Structure</h1>
+<p class="lead">The skeleton every webpage is built on.</p>
+</header>
+<section class="sec"><h2>Summary</h2><p>HTML marks up content with elements. Most elements have an opening and closing tag and can be nested inside each other.</p><p>A page starts with a doctype and an <code>html</code> root. The <code>head</code> holds metadata and the title; the <code>body</code> holds what visitors see.</p></section>
+<div class="file"><div>page.html</div><pre><code style="background:none;padding:0;color:inherit">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Hello&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hi there&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+<section><h2>Key concepts</h2><ul class="chips"><li>Doctype</li><li>head & body</li><li>Headings & lists</li><li>Links & images</li></ul></section>
+<div class="tip"><b>Habit to build</b>Always set the language, charset and a meaningful title.</div>
+<nav class="pn" aria-label="Lecture navigation"><a href="lecture-01.html"><small>← Previous</small>Introduction to the Web</a><a class="r" href="lecture-03.html"><small>Next →</small>Semantic HTML</a></nav>
+<footer class="foot">CSC336 Web Technologies · Muhammad Shoaib</footer>
+</main>
+</body>
+</html>
